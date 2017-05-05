@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSearch">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:weightSum="1"
+                android:background="@android:drawable/edit_text">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/search_edit"
+                    android:layout_weight="0.88"
+                    android:background="@android:drawable/editbox_background_normal" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="39dp"
+                    android:id="@+id/search_button"
+                    android:background="@drawable/car_1"
+                    android:layout_weight="0.12" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</FrameLayout>
